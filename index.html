@@ -1,2 +1,75 @@
-<footer style="margin-top:40px;padding-top:20px;border-top:1px solid #ccc;font-size:14px;"><p><strong>Developer Network:</strong> <a href="https://ram133.github.io/gyd/">GYD</a> | <a href="https://ram133.github.io/asset-store/">Asset Store</a> | <a href="https://ram133.github.io/niche-directory/">Niche Directory</a> | <a href="https://ram133.github.io/template-store/">Template Store</a> | <a href="https://ram133.github.io/prompt-pack/">Prompt Pack</a> | <a href="https://ram133.github.io/code-boilerplates/">Code Boilerplates</a> | <a href="https://ram133.github.io/design-assets/">Design Assets</a> | <a href="https://ram133.github.io/audio-presets/">Audio Presets</a> | <a href="https://ram133.github.io/api-vault/">API Vault</a> | <a href="https://ram133.github.io/micro-saas-kit/">Micro-SaaS Kit</a> | <a href="https://ram133.github.io/ai/">AI</a></p></footer></body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYD</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background: #0f172a; color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; padding: 20px; }
+        header { text-align: center; padding: 40px 0 20px; }
+        h1 { font-size: 2.5rem; letter-spacing: -1px; margin-bottom: 8px; color: #ffffff; }
+        p.subtitle { color: #94a3b8; font-size: 1.1rem; }
+        main { max-width: 600px; margin: 0 auto; width: 100%; background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 32px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3); }
+        .grid { display: grid; gap: 16px; margin: 24px 0; }
+        .btn { display: block; width: 100%; padding: 14px; border-radius: 8px; font-weight: 600; text-align: center; text-decoration: none; border: none; cursor: pointer; transition: background 0.2s; }
+        .btn-primary { background: #2563eb; color: #ffffff; }
+        .btn-primary:hover { background: #1d4ed8; }
+        .btn-secondary { background: #334155; color: #f8fafc; }
+        .btn-secondary:hover { background: #475569; }
+        footer { margin-top: 40px; border-top: 1px solid #334155; padding-top: 20px; text-align: center; font-size: 0.875rem; color: #64748b; }
+        footer nav { display: flex; justify-content: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; line-height: 1.6; }
+        footer a { color: #94a3b8; text-decoration: none; }
+        footer a:hover { color: #f8fafc; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GYD</h1>
+        <p class="subtitle">Guam Services & Automation Hub</p>
+    </header>
+
+    <main>
+        <div id="app">
+            <p style="margin-bottom: 20px; color: #cbd5e1; line-height: 1.6;">Select a service or module to get started. Payment processing integrated via PayPal.</p>
+            
+            <div class="grid">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="crh2509@icloud.com">
+                    <input type="hidden" name="item_name" value="GYD Access Module">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <button type="submit" class="btn btn-primary">Book / Access via PayPal</button>
+                </form>
+
+                <a href="tel:6714566963" class="btn btn-secondary">Contact: 671-456-6963</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p style="margin-bottom: 10px;"><strong>Developer Network:</strong></p>
+        <nav>
+            <a href="https://ram133.github.io/gyd/">GYD</a> | 
+            <a href="https://ram133.github.io/asset-store/">Asset Store</a> | 
+            <a href="https://ram133.github.io/niche-directory/">Niche Directory</a> | 
+            <a href="https://ram133.github.io/template-store/">Template Store</a> | 
+            <a href="https://ram133.github.io/prompt-pack/">Prompt Pack</a> | 
+            <a href="https://ram133.github.io/code-boilerplates/">Code Boilerplates</a> | 
+            <a href="https://ram133.github.io/design-assets/">Design Assets</a> | 
+            <a href="https://ram133.github.io/audio-presets/">Audio Presets</a> | 
+            <a href="https://ram133.github.io/api-vault/">API Vault</a> | 
+            <a href="https://ram133.github.io/micro-saas-kit/">Micro-SaaS Kit</a> | 
+            <a href="https://ram133.github.io/ai/">AI</a>
+        </nav>
+        <p style="margin-top: 15px;">&copy; 2026 CRH2507</p>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(() => {});
+        }
+    </script>
+</body>
 </html>
